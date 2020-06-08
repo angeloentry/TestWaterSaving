@@ -1,0 +1,23 @@
+{
+    "greenPoints": 1020,
+    "saving": 510,
+    "current": {
+        "inflow": 1100,
+        "outflow": 1000
+    },
+    "quality": [{
+            "type": "inflow",
+            "oxygen": 0.800,
+            "pH": 0.100,
+            "NaCl": 0.050,
+            "biosolids": 0.050
+        },
+        {
+            "type": "outflow",
+            "oxygen": 0.400,
+            "pH": 0.200,
+            "NaCl": 0.200,
+            "biosolids": 0.000
+        }
+    ]
+}

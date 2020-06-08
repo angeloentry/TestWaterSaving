@@ -1,0 +1,6 @@
+framework module Pods_TestWaterDashboard {
+  umbrella header "Pods-TestWaterDashboard-umbrella.h"
+
+  export *
+  module * { export * }
+}

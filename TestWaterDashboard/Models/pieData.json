@@ -1,0 +1,15 @@
+{
+    "sources": {
+        "ground": 0.3,
+        "rain": 0.2,
+        "desal": 0.15,
+        "stp": 0.25,
+        "others": 0.1
+    },
+    "places": {
+        "washroom": 0.2,
+        "kitchen": 0.4,
+        "drinking": 0.3,
+        "others": 0.1
+    }
+}
