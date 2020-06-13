@@ -19,13 +19,16 @@ The app basically consists of one screen
 
 ## Features
 
-1) Charts: Charts used from iOS Charts by Daniel Cohen Gindi (https://github.com/danielgindi/Charts)
+1) Charts: Charts used from iOS Charts by Daniel Cohen Gindi (https://github.com/danielgindi/Charts).
 
-2) Login Screen: To login to the app
+2) Login Screen: To login to the app.
 
 3) Water Detail Screen: Shows Water usage details and quality.
 
-4) Networking Module: Networking module created while doing networking calls using URLSessions.
+4) Leaderboard Screen: Shows the leaderboard of members with highest points.
+
+5) Networking Module: Networking module created while doing networking calls using URLSessions.
+
 
 ## Unit Tests
 
