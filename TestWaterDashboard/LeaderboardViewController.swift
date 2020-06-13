@@ -10,6 +10,7 @@ import UIKit
 
 class LeaderboardViewController: UIViewController {
 
+    @IBOutlet weak var boardSegment: UISegmentedControl!
     @IBOutlet weak var tableView: UITableView!
     var leaderBoard: [Leaderboard] = []
     override func viewDidLoad() {
@@ -24,12 +25,28 @@ class LeaderboardViewController: UIViewController {
         Request.fetchLeaderboard.execute(success: { [weak self] (res, data: [Leaderboard]) in
             DataManager.shared.leaderBoard = data
             self?.leaderBoard = DataManager.shared.leaderBoard.sorted { $0.score > $1.score }
-            self?.tableView.reloadData()
+            self?.switchBoard(self?.boardSegment)
         }, failure: { (error) in
             print(error)
         })
     }
-
+    
+    
+    @IBAction func switchBoard(_ sender: UISegmentedControl?) {
+        guard let segment = sender else { return }
+        let board = DataManager.shared.leaderBoard.sorted { $0.score > $1.score }
+        switch segment.selectedSegmentIndex {
+        case 0:
+            let communityBoard = board.filter { $0.state == "Telangana" }
+            leaderBoard = communityBoard
+        case 1:
+            leaderBoard = board
+        default:
+            break
+        }
+        tableView.reloadData()
+    }
+    
     /*
     // MARK: - Navigation
 

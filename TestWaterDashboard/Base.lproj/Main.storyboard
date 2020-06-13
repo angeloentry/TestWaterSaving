@@ -217,7 +217,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9zu-7X-19Z">
-                                <rect key="frame" x="0.0" y="140" width="414" height="722"/>
+                                <rect key="frame" x="0.0" y="171" width="414" height="691"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="leaderboardCell" rowHeight="85" id="E82-C3-dEt" customClass="LeaderboardCell" customModule="TestWaterDashboard" customModuleProvider="target">
@@ -281,24 +281,37 @@
                                     <outlet property="delegate" destination="1o4-v6-rsJ" id="0Uq-wF-KP0"/>
                                 </connections>
                             </tableView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="uue-cy-kZi">
+                                <rect key="frame" x="117.5" y="140" width="179" height="32"/>
+                                <segments>
+                                    <segment title="Community"/>
+                                    <segment title="Overall"/>
+                                </segments>
+                                <connections>
+                                    <action selector="switchBoard:" destination="1o4-v6-rsJ" eventType="valueChanged" id="Xif-Vw-MEk"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="9zu-7X-19Z" firstAttribute="leading" secondItem="Gjq-b3-mlk" secondAttribute="leading" id="89p-Yd-Lfl"/>
-                            <constraint firstItem="9zu-7X-19Z" firstAttribute="top" secondItem="Gjq-b3-mlk" secondAttribute="top" id="8Aj-3e-uBm"/>
+                            <constraint firstItem="uue-cy-kZi" firstAttribute="centerX" secondItem="P4T-vm-C09" secondAttribute="centerX" id="M7G-Ec-R1I"/>
+                            <constraint firstItem="uue-cy-kZi" firstAttribute="top" secondItem="Gjq-b3-mlk" secondAttribute="top" id="TxB-nY-zvg"/>
                             <constraint firstItem="Gjq-b3-mlk" firstAttribute="bottom" secondItem="9zu-7X-19Z" secondAttribute="bottom" id="ht5-h5-fk0"/>
                             <constraint firstItem="Gjq-b3-mlk" firstAttribute="trailing" secondItem="9zu-7X-19Z" secondAttribute="trailing" id="iHn-4N-eoH"/>
+                            <constraint firstItem="9zu-7X-19Z" firstAttribute="top" secondItem="uue-cy-kZi" secondAttribute="bottom" id="lSo-su-CWq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Gjq-b3-mlk"/>
                     </view>
                     <navigationItem key="navigationItem" title="Leaderboard" id="2VD-i8-GiP"/>
                     <connections>
+                        <outlet property="boardSegment" destination="uue-cy-kZi" id="fZS-Wy-D66"/>
                         <outlet property="tableView" destination="9zu-7X-19Z" id="JaQ-w1-wsO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lhZ-k2-r4b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2857" y="-593"/>
+            <point key="canvasLocation" x="2856.521739130435" y="-593.30357142857144"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9mL-47-fX2">
