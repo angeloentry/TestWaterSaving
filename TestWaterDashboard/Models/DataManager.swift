@@ -11,10 +11,12 @@ import Foundation
 class DataManager {
     private init() {
         waterData = []
+        leaderBoard = []
         pieModel = PieModel()
     }
     static let shared = DataManager()
     var waterData: [[DetailTuple]]
+    var leaderBoard: [Leaderboard]
     var pieModel: PieModel
     
     typealias DetailTuple = (title: String, detail: String)

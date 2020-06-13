@@ -13,6 +13,7 @@ enum Request {
     case fetchBarData
     case fetchLineData
     case fetchPieData
+    case fetchLeaderboard
     
     var url: URL? {
         switch self {
@@ -24,6 +25,8 @@ enum Request {
             return Bundle.main.url(forResource: "barData", withExtension: "json")
         case .fetchPieData:
             return Bundle.main.url(forResource: "pieData", withExtension: "json")
+        case .fetchLeaderboard:
+            return Bundle.main.url(forResource: "leaderboard", withExtension: "json")
         }
     }
     

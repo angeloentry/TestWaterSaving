@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Adil",
+        "username": "adils94",
+        "score": 12,
+        "state": "Telangana",
+        "country": "India"
+    },
+    {
+        "name": "Sasha",
+        "username": "sahsha4",
+        "score": 320,
+        "state": "Karnataka",
+        "country": "India"
+    },
+    {
+        "name": "Clara",
+        "username": "clar20",
+        "score": 76,
+        "state": "Madhya Pradesh",
+        "country": "India"
+    },
+    {
+        "name": "Ben",
+        "username": "benz1992",
+        "score": 56,
+        "state": "Telangana",
+        "country": "India"
+    },
+    {
+        "name": "Sam",
+        "username": "sazam007",
+        "score": 39,
+        "state": "Delhi",
+        "country": "India"
+    },
+    {
+        "name": "Judith",
+        "username": "judit28",
+        "score": 44,
+        "state": "Uttar Pradesh",
+        "country": "India"
+    },
+    {
+        "name": "Carlson",
+        "username": "curl15",
+        "score": 12,
+        "state": "Maharastra",
+        "country": "India"
+    },
+    {
+        "name": "Anish",
+        "username": "ansh94",
+        "score": 89,
+        "state": "Maharastra",
+        "country": "India"
+    },
+    {
+        "name": "Nakamura",
+        "username": "nakasaka85",
+        "score": 99,
+        "state": "Tamil Nadu",
+        "country": "India"
+    },
+    {
+        "name": "Topolov",
+        "username": "top100",
+        "score": 190,
+        "state": "Telangana",
+        "country": "India"
+    }
+]
